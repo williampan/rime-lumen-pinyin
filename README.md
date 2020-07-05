@@ -46,7 +46,6 @@ Lumen Pinyin works like a pinyin-based character input system: type words or ini
 * Arrow keys navigate the menu.
 * Number keys select the corresponding word from the menu.
 * `Enter` ignores the selection menu and inputs whatever you've typed directly. 
-* `Shift` (unfortunately) disables the selection menu and temporarily switches to English mode. To capitalize the first letter of a word, you will have to type the word in lowercase and select the capitalized version from the selection menu. 
 
 For more detailed instructions, see the [Rime user guide](https://github.com/rime/home/wiki/UserGuide) (in Chinese). 
 
@@ -57,9 +56,8 @@ This input method has some flaws, which include the following:
 * There is no way to type and select full phrases at a time, because words are joined without spaces between them. You will have to type one word at a time.
 * The dictionary contains many entries that are not used in the modern language or not rendered with the proper spaces or capitalization. You will have to ignore these.
 * All four-syllable words and phrases are given in two forms: one without any spaces or hyphenation, and one with a hyphen separating the first two and last two syllables. You will have to select the correct one based on the word.
-* As stated above, the `Shift` key disables the selection menu, and to capitalize the first letter of a word you will have to type it in lowercase and select the capitalized version from the selection menu. There is no way to use Lumen Pinyin to capitalize other letters (e.g. type in all caps); the easiest way would be to use a case converter. 
 
-These flaws exist because Rime is optimized for Chinese character input instead of pinyin orthography, and so were the dictionary files from which the Lumen Pinyin files were generated. 
+These flaws exist because Rime is optimized for inputting Chinese characters instead of pinyin orthography, as were the dictionary files from which the Lumen Pinyin files were generated. 
 
 Even with its shortcomings, Lumen Pinyin should still be easier to use than entering tone-marked characters individually. 
 
