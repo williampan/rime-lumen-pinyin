@@ -38,7 +38,7 @@ This installation process is gathered and translated from the official Rime docu
 
 Usage
 ---
-After installing, make sure you have Rime enabled, then place your cursor in a text area and use `F4` or `Ctrl` + `` ` `` or to bring up Rime's input method selection menu. Select `Pīnyīn` for Lumen Pinyin.
+After installing, make sure you have Rime enabled, then place your cursor in a text area and use `F4` or `Ctrl` + `` ` `` to bring up Rime's input method selection menu. Select `Pīnyīn` for Lumen Pinyin.
 
 Lumen Pinyin works like a pinyin-based character input system: type words or initials in pinyin, then choose from the selection menu that pops up. 
 
