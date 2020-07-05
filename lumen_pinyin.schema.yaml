@@ -40,15 +40,15 @@ speller:
   delimiter: " '"
   algebra:
     - erase/^xx$/
-    - abbrev/^([a-z]).+$/$1/
-    - abbrev/^([zcs]h).+$/$1/
-    - derive/^([nl])ve$/$1ue/
-    - derive/^([jqxy])u/$1v/
+    - abbrev/^([A-Za-z]).+$/$1/
+    - abbrev/^([ZCSzcs]h).+$/$1/
+    - derive/^([NLnl])ve$/$1ue/
+    - derive/^([JQXYjqxy])u/$1v/
     - derive/un$/uen/
     - derive/ui$/uei/
     - derive/iu$/iou/
     - derive/([aeiou])ng$/$1gn/
-    - derive/([dtngkhrzcs])o(u|ng)$/$1o/
+    - derive/([DTNGKHRZCSdtngkhrzcs])o(u|ng)$/$1o/
     - derive/ong$/on/
     - derive/ao$/oa/
     - derive/([iu])a(o|ng?)$/a$1$2/
@@ -56,9 +56,9 @@ speller:
 translator:
   dictionary: lumen_pinyin
   preedit_format:
-    - xform/([nl])v/$1ü/
-    - xform/([nl])ue/$1üe/
-    - xform/([jqxy])v/$1u/
+    - xform/([NLnl])v/$1ü/
+    - xform/([NLnl])ue/$1üe/
+    - xform/([JQXYjqxy])v/$1u/
 
 custom_phrase:
   dictionary: ""
