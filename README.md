@@ -1,6 +1,6 @@
 Lumen Pinyin (Guāngyào Pīnyīn 光耀拼音)
 ===
-Lumen Pinyin (Guāngyào Pīnyīn 光耀拼音) is an input schema for [Rime](https://rime.im/) that can be used to type [pinyin](https://en.wikipedia.org/wiki/Pinyin). It works similarly to existing pinyin-based input methods, except it's built for typing Standard Chinese in [pinyin orthography](http://pinyin.info/readings/zyg/rules.html) instead of Chinese characters.
+Lumen Pinyin (Guāngyào Pīnyīn 光耀拼音) is an input schema for [Rime](https://rime.im/) that can be used to type [pinyin](https://en.wikipedia.org/wiki/Pinyin). It works similarly to existing pinyin-based input methods, except it's built for typing Standard Chinese in tone-marked [pinyin orthography](http://pinyin.info/readings/zyg/rules.html) instead of Chinese characters.
 
 Lumen Pinyin is named after [Zhou Youguang](https://en.wikipedia.org/wiki/Zhou_Youguang) 周有光, the inventor of pinyin. Both his given name Yàopíng 耀平 (“brilliant peace”) and his pen name Yǒuguāng 有光 (“with light”) are related to light (*lūmen* in Latin), and characters from his names combine to form the word guāngyào 光耀, “brilliance”.
 
@@ -40,7 +40,7 @@ Usage
 ---
 After installing, make sure you have Rime enabled, then place your cursor in a text area and use `F4` or `Ctrl` + `` ` `` to bring up Rime's input method selection menu. Select `Pīnyīn` for Lumen Pinyin.
 
-Lumen Pinyin works like a pinyin-based character input system: type words or initials in pinyin, then choose from the selection menu that pops up. 
+Lumen Pinyin works like a pinyin-based character input system: type words or initials in pinyin, then choose tone-marked words from the selection menu that pops up. 
 
 * The space bar selects the top word (or the selected word, if you've navigated down). 
 * Arrow keys navigate the menu.
@@ -99,3 +99,22 @@ For the rules of pinyin orthography, see:
 For a list of texts written in pinyin orthography, see: 
 
 * [Online texts in Hanyu Pinyin](http://pinyin.info/news/2008/online-texts-in-hanyu-pinyin/) (May 2008)
+
+For additional resources on pinyin, see Mark Swofford’s website [Pinyin.info](http://pinyin.info). 
+
+### Pinyin conversion tools ### 
+
+If you wish to convert existing digital Chinese text to pinyin orthography, there are two tools for doing so: 
+
+* [Google Translate](https://translate.google.com/), which provides pinyin transcription when translating from Chinese
+* [Key Chinese software](https://cjkware.com/), a paid desktop application that provides conversion from Chinese characters to pinyin
+
+For a comprehensive review of these two tools, see: 
+
+* Gábor Ugray, [Is automatic Pinyin transcription feasible? I tested Google MT and Key5](https://jealousmarkup.xyz/texts/pinyin-transcription-test-google-key5/) (January 2020) 
+
+Automatic conversion from characters to pinyin is difficult, and neither of these tools are perfect. They do provide a good starting point, however, and it might be easier to use these tools and then manually edit than to type everything from scratch. 
+
+Acknowledgments
+---
+Many thanks to 佛振 ([lotem](https://github.com/lotem)) and the other developers of Rime, without whom this project would not be possible. 
