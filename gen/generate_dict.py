@@ -125,6 +125,24 @@ tones = {
 
 # prepare entries and write to output file 
 with open('lumen_pinyin.dict.yaml', 'w') as output: 
+    output.write(
+"""# Rime dictionary
+# encoding: utf-8
+#
+# Lumen Pinyin - 光耀拼音
+#
+#   William Pan <wpan@berkeley.edu>
+#
+
+---
+name: lumen_pinyin
+version: "2020.07.04"
+sort: by_weight
+use_preset_vocabulary: false
+...
+    
+""") 
+
     for entry in romanization_list: 
         input_code = '' 
         word = '' # word in pinyin 
@@ -149,7 +167,7 @@ with open('lumen_pinyin.dict.yaml', 'w') as output:
                     vowel = re.findall(r'[aeiouv]', toneless)[-1]
                 display_vowel = 'ü' if vowel == 'v' else vowel 
                 composed = unicodedata.normalize('NFC', display_vowel + tones[tone])
-                marked = toneless.replace(vowel, composed)
+                marked = toneless.replace(vowel, composed).replace('v', 'ü')
 
             # add syllable to input code 
             if len(input_code) > 0: 
@@ -170,11 +188,10 @@ with open('lumen_pinyin.dict.yaml', 'w') as output:
                 alt_word += marked 
             
         # add entry to dictionary file
-        # capitalized word is given 1/10 of the weight
         output.write(
             word.capitalize() + '\t' + 
-            input_code + '\t' + 
-            str(int(0.1 * weights_dict[entry])) + '\n'
+            input_code.capitalize() + '\t' + 
+            str(weights_dict[entry]) + '\n'
         )
         output.write(
             word + '\t' + 
@@ -186,8 +203,8 @@ with open('lumen_pinyin.dict.yaml', 'w') as output:
         if alt_word: 
             output.write(
                 alt_word.capitalize() + '\t' + 
-                input_code + '\t' + 
-                str(int(0.1 * weights_dict[entry])) + '\n'
+                input_code.capitalize() + '\t' + 
+                str(weights_dict[entry]) + '\n'
             )
             output.write(
                 alt_word + '\t' + 
